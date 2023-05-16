@@ -15,3 +15,8 @@ We have a standard format for commits to keep things tidy, just follow the follo
    This is a work-in-progress and needs more options.
    ```
 5. If your commit does not follow these rules, use `git rebase -i HEAD~1` to rewrite the timeline. Change the number after the tilda to rewrite multiple commits.
+
+## Merging
+
+Always create a branch for your overarching project, such as `settings-page`, where you can have multiple commits working towards your goal.
+Do not merge this via `rebase`, but instead via a [pull request](https://github.com/swarm-team/style/pulls)
