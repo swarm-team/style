@@ -29,7 +29,7 @@ To start adding a feature create a branch for that feature so you can make a PR 
 ```bash
 git checkout -b settings-page # Create branch locally
 git push origin settings-page # Create branch on remote
-git push --set-upstream origin # Link the two branches
+git push --set-upstream origin settings-page # Link the two branches
 ```
 
 Then you can make your changes.
