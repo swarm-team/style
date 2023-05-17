@@ -1,22 +1,26 @@
-# style
+# CommitStyleGuide
+This is a style guide for commits that encourages the commit history to be read.
 
-We have a standard format for commits to keep things tidy, just follow the following rules and you'll be fine:
+# Table of Contents
+1. [Goal](#goal)
+2. [Overview](#overview)
 
-1. If files you will be changing aren't formatted by our `.prettierrc.json` standards, format all files and create a commit for formatting all files, which should look like this: `🧹 All: Format Files`
-2. Commits should serve one clear purpose, e.g: add one feature
-3. Commit titles should start with an emoji, then a category, and then a clear, brief message, so for example: `⚙ Swamp: Add Settings Page`
-4. Commits should have a longer body explaning the commit:
-   ```
-   ⚙ Swamp: Add Settings Page
-   
-   This commit adds a settings page in swamp.settings, using our swarm.ui.settings 
-   system.
-   
-   This is a work-in-progress and needs more options.
-   ```
-5. If your commit does not follow these rules, use `git rebase -i HEAD~1` to rewrite the timeline. Change the number after the tilda to rewrite multiple commits.
+## Overview
 
-## Merging
+Here's how the basic commit message should look.
+"😄 UI Update: Redesigned Homepage to look more modern"
 
-Always create a branch for your overarching project, such as `settings-page`, where you can have multiple commits working towards your goal.
-Do not merge this via `rebase`, but instead via a [pull request](https://github.com/swarm-team/style/pulls)
+## Goal
+Imagine your a dev on an instant messaging app with some friends.
+Your busy with finals and you come back to continue adding private messages.
+The one issue is that your codebase has completely changed, this is the commit history:
+
+- "Pointing to Web by Baphomet" ""
+- "Update user.ts by Baphomet" ""
+- "Restructure Public and Private Apis by The Prophet" ""
+- "Update user.ts by Baphomet" ""
+- "Add friends by You" ""
+
+You read it for some insight in where you code has gone so you can implement friend requests,
+but the commit messages aren't much help. Clearly you need a system that better explains whats
+going on without having to into the blame
