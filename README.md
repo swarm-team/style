@@ -2,12 +2,12 @@
 
 We have a standard format for commits to keep things tidy, just follow the following rules and you'll be fine:
 
-1. If files you will be changing aren't formatted by our `.prettierrc.json` standards, format all files and create a commit for formatting all files, which should look like this: `🧹 All: Format Files`
+1. If files you will be changing aren't formatted by our `.prettierrc.json` standards, format all files and create a commit for formatting all files, which should look like this: `All: Format Files`
 2. Commits should serve one clear purpose, e.g: add one feature
-3. Commit titles should start with an emoji, then a category, and then a clear, brief message, so for example: `⚙ Swamp: Add Settings Page`
+3. Commit titles should start with a category, and then a clear, brief message, so for example: `Swamp: Add Settings Page`
 4. Commits should have a longer body explaning the commit:
    ```
-   ⚙ Swamp: Add Settings Page
+   Swamp: Add Settings Page
    
    This commit adds a settings page in swamp.settings, using our swarm.ui.settings 
    system.
